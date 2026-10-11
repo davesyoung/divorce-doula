@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://docs.google.com/document/d/12l0J-Tf1YsbBhpqOM7G5ss1IKJiq1Hi8bMpa3fslzGo/edit?usp=sharing",
+      "permanent": false
+    }
+  ]
+}
