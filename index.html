@@ -290,10 +290,19 @@ body{font-weight:300}
 <style>
 .si>img.fx[data-k^="splash"]{filter:drop-shadow(0 0 4px rgba(255,255,255,.95)) saturate(1.25)}
 </style>
+<style>
+.handle{height:31px}.handle:after{margin-top:11px}
+#trk{height:33px}
+#chips{padding:0 26px 17px;-webkit-mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.16) 12px,#000 26px,#000 calc(100% - 26px),rgba(0,0,0,.16) calc(100% - 12px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.16) 12px,#000 26px,#000 calc(100% - 26px),rgba(0,0,0,.16) calc(100% - 12px),transparent 100%)}
+#chips button.g{margin-left:22px}#chips button:first-child{margin-left:0}
+</style>
+<style>
+#chips{padding:0 60px 17px;-webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 25px,rgba(0,0,0,.14) 34px,#000 66px,#000 calc(100% - 66px),rgba(0,0,0,.14) calc(100% - 34px),transparent calc(100% - 25px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,transparent 25px,rgba(0,0,0,.14) 34px,#000 66px,#000 calc(100% - 66px),rgba(0,0,0,.14) calc(100% - 34px),transparent calc(100% - 25px),transparent 100%)}
+</style>
 </head>
 <body>
 <div id="sky"><i></i><i></i></div>
-<div id="dock"><button class="handle" id="h1" aria-label="Table of contents"></button><div id="col"><div id="trk"></div><div id="chips"></div></div><div id="tl"></div><div id="ver"><span class="vn">v.67</span><span class="vd"> · Oct 15, 2026</span></div><a class="btn" id="cta" href="https://calendly.com/YOUR-LINK" target="_blank" rel="noopener" aria-label="Schedule a free call"><span class="tx">Schedule a free call</span><span class="material-symbols-outlined ic">calendar_add_on</span></a></div>
+<div id="dock"><button class="handle" id="h1" aria-label="Table of contents"></button><div id="col"><div id="trk"></div><div id="chips"></div></div><div id="tl"></div><div id="ver"><span class="vn">v.69</span><span class="vd"> · Oct 15, 2026</span></div><a class="btn" id="cta" href="https://calendly.com/YOUR-LINK" target="_blank" rel="noopener" aria-label="Schedule a free call"><span class="tx">Schedule a free call</span><span class="material-symbols-outlined ic">calendar_add_on</span></a></div>
 <div class="wip" id="wip"><b>Feedback wanted</b>Add comments to this copy in Google Docs by tapping the feedback button.</div><header id="hd"><div class="hb" id="hb"></div><button class="brand" id="brand">Dave the Divorce Doula</button><a class="fb" href="https://docs.google.com/document/d/12l0J-Tf1YsbBhpqOM7G5ss1IKJiq1Hi8bMpa3fslzGo/edit?tab=t.0" target="_blank" rel="noopener">Add feedback</a></header>
 <section data-c="#ffffff,#ffffff" id="top" class="hero"><div class="col"><h1 id="h1t">Dave the Divorce Doula</h1><p class="tag">Supporting grief, clarity, and&nbsp;growth</p></div><div class="mastwrap"><div class="mi"><img width="1680" height="505" decoding="async" src="images/masthead.jpg" alt="A winding path leading over hills toward the sunrise"><svg viewBox="0 0 1680 505" aria-hidden="true"><path id="pth" d="M336 404 C358 399 426 378 470 372 C514 366 555 370 600 368 C645 366 700 366 740 362 C780 358 812 349 840 342 C868 335 885 329 905 322 C925 315 942 307 960 300 C978 293 997 286 1010 280 C1023 274 1032 268 1040 262 C1048 256 1052 250 1060 245 C1068 240 1077 236 1085 232 C1093 228 1106 224 1110 222" fill="none" stroke="none"/></svg><img class="tv" id="t1" alt="" src="images/sprite-t1.png" style="width:8.01%"><img class="tv" id="t2" alt="" style="width:8.01%"><img class="tv" id="t3" alt="" src="images/sprite-t3.png" style="width:6.32%"></div></div><div class="col"><p>This is one of the most painful and transformative experiences of your life. You are navigating difficult emotions while learning an unfamiliar process and making high-stakes decisions. How you move through this now will shape your emotional well-being, finances, and quality of life for years to&nbsp;come.</p><p>You deserve support during this relatively short but pivotal chapter. Our sessions make space to understand and heal the emotional pain this experience brings up. Separating the emotional work from the legal process allows you to make sound decisions that move the divorce toward resolution with less conflict, lower costs, and less risk of costly&nbsp;mistakes.</p><p>You are able to learn from the valuable lessons and insights my clients and I gained through our own difficult experiences. I help you understand how different choices unfold, recognize hidden risks and costs, and learn from the shifts in perspective that have helped others let go, heal, and move&nbsp;forward.</p><p class="pull">This isn’t about the divorce. It’s about you stepping into a better&nbsp;life.</p><p>I’m here for the whole journey: mourning the death of the life you thought you would have, finding your way through the valley of darkness, and recognizing the new life you are already&nbsp;creating.</p></div></section><section data-c="#ffffff,#ffffff" id="death"><div class="strip" id="stD" data-dy="-2" data-ox="10" data-oy="6" data-es=".8" data-sp="B" data-dark="0" data-h="210"><div class="si"><img loading="lazy" width="1500" height="331" decoding="async" class="art" alt="" src="images/art-stD.jpg"><svg viewBox="0 0 2172 480" aria-hidden="true"><path class="pp" d="M580 356 C592 355 620 354 650 352 C680 350 718 350 760 346 C802 342 853 333 900 328 C947 323 1017 316 1040 314" fill="none" stroke="none"/></svg></div></div><div class="col">
   <h3>Death</h3>
@@ -329,7 +338,7 @@ const lerp=(a,b,k)=>a.map((v,j)=>Math.round(v+(b[j]-v)*k)),rgb=a=>'rgb('+a.join(
 const trk=$('trk'),chips=$('chips'),fill=$('fill'),toc=$('toc'),tl=$('tl'),cta=$('cta');
 const kids=n=>items[n][3]&&items[n+1]&&!items[n+1][3];
 const tog=o=>anim(o?1:0);
-const go=id=>{tog(false);setTimeout(()=>{const sec=$(id),t=sec.querySelector('.strip')||sec.querySelector('h2,h3')||sec,y=id==='top'?0:t.getBoundingClientRect().top+scrollY-78;scrollTo({top:Math.max(0,y),behavior:'smooth'})},60)};
+const go=id=>{window._jump=true;clearTimeout(window._jt);window._jt=setTimeout(()=>{window._jump=false},2600);tog(false);setTimeout(()=>{const sec=$(id),t=sec.querySelector('.strip')||sec.querySelector('h2,h3')||sec,y=id==='top'?0:t.getBoundingClientRect().top+scrollY-78;scrollTo({top:Math.max(0,y),behavior:'smooth'})},60)};
 const bc=document.createElement('div');bc.id='bc';tl.append(bc);
 const NS='http://www.w3.org/2000/svg',svg=document.createElementNS(NS,'svg'),pS=document.createElementNS(NS,'path'),pF=document.createElementNS(NS,'path');svg.id='str';pS.setAttribute('class','sl');pF.setAttribute('class','sf');svg.append(pS,pF);bc.append(svg);
 const dots=[],labs=[];
@@ -377,6 +386,7 @@ let x0=0,lastNud=0,lastU=0,lock=false,vx=0,effT=0,wasOff=false,rv=0;const mw=im[
 const yAtM=x=>{if(x<=mpx[0])return mpy[0];if(x>=mpx[240])return mpy[240];let lo=0,hi=240;while(hi-lo>1){const m=(lo+hi)>>1;if(mpx[m]<=x)lo=m;else hi=m}return mpy[lo]+(mpy[hi]-mpy[lo])*(x-mpx[lo])/((mpx[hi]-mpx[lo])||1)};
 const T=36;let ly=scrollY,eff=Math.max(0,scrollY-3),mv=1,turn=false,tc=0,old=1;
 function walk(){const y=scrollY,dl=y-ly;ly=y;if(y<=3){eff=0;mv=1;turn=false;tc=0;old=1;vx=0;lock=false;rv=0}
+if(window._jump){eff=Math.max(0,y-3);mv=1;turn=false;tc=0;old=1;rv=0;vx=0;lock=false;wasOff=false}
 const vis=mw.getBoundingClientRect().bottom>0;if(vis&&wasOff&&eff>0){mv=dl<0?-1:1;old=mv;turn=true;tc=0}wasOff=!vis;const sg=dl>.01?1:dl<-.01?-1:0;
 if(sg){if(turn){if(sg!==mv){old=mv;mv=sg;tc=0}else{tc+=Math.abs(dl);if(tc>=T)turn=false}}else if(sg!==mv&&eff>0){rv+=Math.abs(dl);if(rv>50){rv=0;turn=true;tc=0;old=mv;mv=sg}}else{rv=0;mv=sg;eff=Math.max(0,eff+dl)}}
 const kk=Math.min(1,eff/520),q=kk*kk*(3-2*kk),ph=eff/28*Math.PI,pt=p.getPointAtLength(q*L);let fr,face;
@@ -406,6 +416,7 @@ let gY=scrollY,gdir=1;
 function upd2(){const vh=innerHeight,gs=scrollY-gY;gY=scrollY;if(gs>.5)gdir=1;else if(gs<-.5)gdir=-1;st.forEach(o=>{const r=o.el.getBoundingClientRect();if(r.bottom<-50||r.top>vh+50){o.lastD=undefined;return}
 const k=o.si.clientWidth/2172,d=vh-(H0||150)-50-(r.bottom-r.height*o.bm)-o.hold;
 if(d<=0){o.eff=0;o.mv=1;o.turn=false;o.tc=0;o.old=1;o.vx=0;o.turnLock=false;o.rv=0}
+if(window._jump){o.eff=Math.max(0,d);o.mv=1;o.turn=false;o.tc=0;o.old=1;o.rv=0;o.vx=0;o.turnLock=false;o.lastD=d}
 if(o.lastD===undefined){o.lastD=d;o.eff=Math.max(0,d);o.mv=1;o.turn=false;o.tc=0;o.old=1;if(o.eff>0&&!o.solo){o.mv=gdir;o.old=gdir;o.turn=true}}
 const dl=d-o.lastD;o.lastD=d;const sg=dl>.01?1:dl<-.01?-1:0;
 if(sg){if(o.turn){if(sg!==o.mv){o.old=o.mv;o.mv=sg;o.tc=0}else{o.tc+=Math.abs(dl);if(o.tc>=T)o.turn=false}}else if(sg!==o.mv&&o.eff>0){o.rv=(o.rv||0)+Math.abs(dl);if(o.rv>50){o.rv=0;if(o.solo){o.mv=sg}else{o.turn=true;o.tc=0;o.old=o.mv;o.mv=sg}}}else{o.rv=0;o.mv=sg;o.eff=Math.max(0,o.eff+dl)}}
@@ -461,6 +472,7 @@ function fitBottom(){const h2=document.querySelector('#bio h2');if(!h2)return;do
 addEventListener('resize',fitBottom);addEventListener('load',fitBottom);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fitBottom);fitBottom();
 document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a)return;const h=a.getAttribute('href')||'';if(/calendly|YOUR-LINK/.test(h))track('schedule_click',{where:a.id||(a.classList.contains('chat')?'lets_chat':a.classList.contains('lnk')?'text_link':'link')});else if(h.includes('docs.google.com'))track('feedback_click')},true);
 {const hit={};addEventListener('scroll',()=>{const p=Math.round((scrollY+innerHeight)/document.documentElement.scrollHeight*100);[25,50,75,100].forEach(t=>{if(p>=t&&!hit[t]){hit[t]=1;track('scroll_depth',{percent:t})}})},{passive:true})}
+addEventListener('scroll',()=>{if(window._jump){clearTimeout(window._jt2);window._jt2=setTimeout(()=>{window._jump=false},160)}},{passive:true});
 </script>
 </body>
 </html>
